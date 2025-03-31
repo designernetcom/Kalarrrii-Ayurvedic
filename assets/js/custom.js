@@ -133,56 +133,112 @@ Project: Pure Ayurveda HTML
     },
 
 
-    // care slider
-    ayur_care_slider: function () {
-      var careSwiper = new Swiper(".ayur-care-slider", {
-        loop: true,
-        slidesPerView: 8,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: '.ayur-care-slider-sec .swiper-button-next',
-          prevEl: '.ayur-care-slider-sec .swiper-button-prev',
-        },
-        breakpoints: {
-          1800: {
-            slidesPerView: 8,
-            spaceBetween: 30,
-          },
-          1600: {
-            slidesPerView: 8,
-            spaceBetween: 10,
-          },
-          1199: {
-            slidesPerView: 8,
-            spaceBetween: 0,
-          },
-          1024: {
-            slidesPerView: 7,
-            spaceBetween: 0,
-          },
-          991: {
-            slidesPerView: 6,
-            spaceBetween: 0,
-          },
-          767: {
-            slidesPerView: 5,
-            spaceBetween: 0,
-          },
-          600: {
-            slidesPerView: 4,
-            spaceBetween: 0,
-          },
-          460: {
-            slidesPerView: 3,
-            spaceBetween: 0,
-          },
-          0: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-          },
-        },
-      });
-    },
+    // Care Slider
+// ayur_care_slider: function () {
+//   var careSwiper = new Swiper(".ayur-care-slider", {
+//     loop: true,
+//     slidesPerView: 8,
+//     spaceBetween: 30,
+//     navigation: {
+//       nextEl: '.ayur-care-slider-sec .swiper-button-next',
+//       prevEl: '.ayur-care-slider-sec .swiper-button-prev',
+//     },
+//     keyboard: {
+//       enabled: true,
+//     },
+//     grabCursor: true,
+//     speed: 700, // Faster slide transition (0.7s)
+//     autoplay: {
+//       delay: 1000, // Faster autoplay (1s delay)
+//       disableOnInteraction: false,
+//     },
+//     breakpoints: {
+//       1800: {
+//         slidesPerView: 8,
+//         spaceBetween: 30,
+//         autoplay: false,
+//       },
+//       1600: {
+//         slidesPerView: 8,
+//         spaceBetween: 10,
+//         autoplay: false,
+//       },
+//       1199: {
+//         slidesPerView: 8,
+//         spaceBetween: 0,
+//         autoplay: false,
+//       },
+//       1024: {
+//         slidesPerView: 7,
+//         spaceBetween: 0,
+//         autoplay: false,
+//       },
+//       991: {
+//         slidesPerView: 6,
+//         spaceBetween: 0,
+//         autoplay: false,
+//       },
+//       767: {
+//         slidesPerView: 5,
+//         spaceBetween: 0,
+//         speed: 700,
+//         autoplay: {
+//           delay: 1000,
+//         },
+//       },
+//       600: {
+//         slidesPerView: 4,
+//         spaceBetween: 0,
+//         speed: 700,
+//         autoplay: {
+//           delay: 1000,
+//         },
+//       },
+//       460: {
+//         slidesPerView: 3,
+//         spaceBetween: 0,
+//         speed: 700,
+//         autoplay: {
+//           delay: 1000,
+//         },
+//       },
+//       0: {
+//         slidesPerView: 2,
+//         spaceBetween: 0,
+//         speed: 700,
+//         autoplay: {
+//           delay: 1000,
+//         },
+//       },
+//     },
+//   });
+// },
+
+
+ // Optimized Care Slider
+ ayur_care_slider: function () {
+  var careSwiper = new Swiper(".ayur-care-slider", {
+    loop: true,
+    slidesPerView: 8,
+    spaceBetween: 30,
+    navigation: { nextEl: '.ayur-care-slider-sec .swiper-button-next', prevEl: '.ayur-care-slider-sec .swiper-button-prev' },
+    speed: 700,
+    autoplay: { delay: 1000, disableOnInteraction: false },
+    breakpoints: {
+      1800: { slidesPerView: 8, spaceBetween: 30 },
+      1600: { slidesPerView: 8, spaceBetween: 10 },
+      1199: { slidesPerView: 8, spaceBetween: 0 },
+      1024: { slidesPerView: 7 },
+      991: { slidesPerView: 6 },
+      767: { slidesPerView: 5 },
+      600: { slidesPerView: 4 },
+      460: { slidesPerView: 3 },
+      0: { slidesPerView: 2 }
+    }
+  });
+},
+
+
     // testimonial slider
     ayur_testimonial_slider: function () {
       var testimonialSwiper = new Swiper(".ayur-testimonial-slider", {
