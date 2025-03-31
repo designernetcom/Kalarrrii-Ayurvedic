@@ -204,6 +204,7 @@
     .ayur-navmenu-wrapper{
         gap: 20px;
     }
+
     .ayur-menu-open .ayur-toggle-btn span:nth-child(1){
         transform: translateY(0) translateX(0) rotate(45deg);
         transition-delay: .1s;
@@ -462,6 +463,7 @@
     .ayur-contactpage-box{
         padding: 30px 20px;
     }
+   
 
 }
 @media(max-width:375px) {

@@ -630,7 +630,7 @@ li.ayur-has-menu a svg{
   font-size: 16px;
   font-weight: 400;
   color: var(--ayur-banheading-color);
-  padding: 13px 0;
+  padding: 13px 47px 0px 0px;
 }
 .ayur-careslide-box:hover h3{
   color: var(--ayur-primary-color);
@@ -2390,3 +2390,24 @@ tr.ayur-cartsubtotal td{
   top: 10%;
 }
 /* Top-product section css End */
+@media (max-width:992px) {
+  .NavBtn{
+    display: none !important;
+  }
+}
+
+.FooterName{
+  text-decoration: none !important;
+    color: inherit !important;
+}
+
+
+.FooterContact{
+
+  text-decoration: none !important;
+  color: #E4D4CF !important;
+}
+.ayur-navmenu-wrapper{
+  position: relative;
+  right: 10px !important;
+}
